@@ -1,0 +1,89 @@
+/* Fonts */
+@font-face {
+    font-family: Georgiaz;
+    src: url("../fonts/Georgiaz.TTF");
+}
+@font-face {
+    font-family: DotGothic16;
+    src: url("../fonts/DotGothic16-Regular.ttf");
+}
+
+/* Base layout */
+:root {
+    --shadow: #1a3e586a;
+    --text: rgba(0, 0, 0, 0.8);
+}
+html {
+    background-image: url("../img/texture_tiles_wood.jpg");
+    background-size: 50%;
+}
+body {
+    margin: 30px auto 90px;
+
+    width: 800px;
+    height: 930px;
+
+    background-image: url("../img/notebook_spiralbound.png");
+    background-position: 50% 0px;
+    background-size: auto 930px;
+    background-repeat: no-repeat;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Global text styling */
+h1, p {
+    color: var(--text);
+}
+
+/* Utility/effect classes */
+.centertext {
+    text-align: center;
+}
+.dropShadow {
+    filter: drop-shadow(-3px 2px 2px var(--shadow));
+}
+.spacer10 {
+    height: 10px;
+}
+
+/* Navbar */
+nav {
+    position: relative;
+    top: 140px;
+    left: 585px;
+
+    padding: 20px;
+
+    width: 225px;
+    
+    background-color: #efefef;
+    transform: rotate(-1deg);
+}
+nav img {
+    position: absolute;
+    top: -25px;
+    left: 25px;
+    width: 170px;
+}
+nav h1.navTitle {
+    text-align: center;
+    margin: 30px 0 0;
+
+    font-family: 'Georgiaz';
+    font-size: 36px;
+}
+nav p {
+    margin: 10px auto;
+
+    font-family: 'DotGothic16';
+    font-size: 16px;
+    line-height: 1.2;
+}
+nav hr {
+    margin: 0;
+
+    border: none;
+    border-top: 1px dashed var(--text);
+}
