@@ -4,8 +4,12 @@
     src: url("../fonts/Georgiaz.TTF");
 }
 @font-face {
-    font-family: DotGothic16;
+    font-family: 'Dot Gothic 16';
     src: url("../fonts/DotGothic16-Regular.ttf");
+}
+@font-face {
+    font-family: 'Libre Barcode 128';
+    src: url("../fonts/LibreBarcode128-Regular.ttf");
 }
 
 /* Base layout */
@@ -28,11 +32,11 @@ body {
     background-size: auto 930px;
     background-repeat: no-repeat;
 }
+
+/* Global styling */
 * {
     box-sizing: border-box;
 }
-
-/* Global text styling */
 h1, p {
     color: var(--text);
 }
@@ -48,15 +52,21 @@ h1, p {
     height: 10px;
 }
 
+/* General classes */
+ul.noBullets {
+    list-style-type: none;
+    padding: 0;
+}
+
 /* Navbar */
 nav {
     position: relative;
-    top: 140px;
-    left: 585px;
+    top: 100px;
+    left: 590px;
 
     padding: 20px;
 
-    width: 225px;
+    width: 220px;
     
     background-color: #efefef;
     transform: rotate(-1deg);
@@ -65,25 +75,43 @@ nav img {
     position: absolute;
     top: -25px;
     left: 25px;
-    width: 170px;
+    width: 160px;
 }
 nav h1.navTitle {
     text-align: center;
-    margin: 30px 0 0;
+    margin: 20px 0 0;
 
     font-family: 'Georgiaz';
     font-size: 36px;
 }
-nav p {
+nav p,
+nav ul {
     margin: 10px auto;
 
-    font-family: 'DotGothic16';
-    font-size: 16px;
+    font-family: 'Dot Gothic 16';
+    font-size: 15px;
     line-height: 1.2;
+}
+nav li {
+    line-height: 1.4;
+}
+nav li:hover::after,
+nav li.active::after {
+    content: " <";
+}
+nav li.active:hover::after {
+    content: " <<"
+}
+nav a {
+    color: var(--text);
 }
 nav hr {
     margin: 0;
 
     border: none;
     border-top: 1px dashed var(--text);
+}
+nav p.barcode {
+    font-family: 'Libre Barcode 128';
+    font-size: 21px;
 }
