@@ -8,8 +8,12 @@
     src: url("../fonts/DotGothic16-Regular.ttf");
 }
 @font-face {
-    font-family: 'Libre Barcode 128';
-    src: url("../fonts/LibreBarcode128-Regular.ttf");
+    font-family: 'Libre Barcode 39';
+    src: url("../fonts/LibreBarcode39-Regular.ttf");
+}
+@font-face {
+    font-family: 'Caveat Brush';
+    src: url("../fonts/CaveatBrush-Regular.ttf");
 }
 
 /* Base layout */
@@ -51,18 +55,27 @@ h1, p {
 .spacer10 {
     height: 10px;
 }
+.centerblock {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* General classes */
 ul.noBullets {
     list-style-type: none;
     padding: 0;
 }
+img.bgImg {
+    position: absolute;
+}
 
-/* Navbar */
-nav {
+/* Header bar */
+header {
     position: relative;
     top: 100px;
-    left: 590px;
+    left: 10px;
+    float: right;
 
     padding: 20px;
 
@@ -70,48 +83,113 @@ nav {
     
     background-color: #efefef;
     transform: rotate(-1deg);
+    z-index: 1;
 }
-nav img {
+header img {
     position: absolute;
     top: -25px;
     left: 25px;
     width: 160px;
 }
-nav h1.navTitle {
+header h1.headerTitle {
     text-align: center;
     margin: 20px 0 0;
 
     font-family: 'Georgiaz';
     font-size: 36px;
 }
-nav p,
-nav ul {
+header p,
+header ul {
     margin: 10px auto;
 
     font-family: 'Dot Gothic 16';
     font-size: 15px;
     line-height: 1.2;
 }
-nav li {
+header li {
     line-height: 1.4;
 }
-nav li:hover::after,
-nav li.active::after {
+header li:hover::after,
+header li.active::after {
     content: " <";
 }
-nav li.active:hover::after {
+header li.active:hover::after {
     content: " <<"
 }
-nav a {
+header a {
     color: var(--text);
 }
-nav hr {
+header hr {
     margin: 0;
 
     border: none;
     border-top: 1px dashed var(--text);
 }
-nav p.barcode {
-    font-family: 'Libre Barcode 128';
-    font-size: 21px;
+header p.barcode {
+    font-family: 'Libre Barcode 39';
+    font-size: 23px;
+}
+
+/* Main */
+main {
+    margin-left: 70px;
+    padding-top: 10px;
+    
+    transform: rotate(4deg);
+}
+main > h1 {
+    margin: -20px 0;
+
+    text-align: center;
+    font-family: 'Caveat Brush';
+    font-size: 65px;
+    color: #a3544d;
+}
+main img.coffeeStain1 {
+    top: 130px;
+
+    width: 400px;
+
+    z-index: -1;
+}
+main img.coffeeStain2 {
+    top: 195px;
+    left: 295px;
+
+    width: 400px;
+    
+    z-index: -1;
+}
+main img.mainStroke1 {
+    left: 10px;
+    top: 30px;
+
+    width: 660px;
+    
+    transform: rotate(-4deg);
+}
+main img.mainLogo {
+    width: 280px;
+}
+main img.fruitStickerJuicy {
+    top: 90px;
+    left: 40px;
+
+    width: 70px;
+    
+    transform: rotate(-30deg);
+}
+main img.fruitStickerBitter {
+    top: 42px;
+    left: 370px;
+
+    width: 70px;
+    
+    transform: rotate(-10deg);
+}
+main img.fruitStickerSummerina {
+    top: 165px;
+    left: 390px;
+
+    width: 70px;
 }
