@@ -1,6 +1,6 @@
 /* Fonts */
 @font-face {
-    font-family: Georgiaz;
+    font-family: 'Georgiaz';
     src: url("../fonts/Georgiaz.TTF");
 }
 @font-face {
@@ -14,6 +14,34 @@
 @font-face {
     font-family: 'Caveat Brush';
     src: url("../fonts/CaveatBrush-Regular.ttf");
+}
+@font-face {
+    font-family: 'Gochi Hand';
+    src: url("../fonts/GochiHand-Regular.ttf");
+}
+@font-face {
+    font-family: 'Courier Prime';
+    src: url("../fonts/CourierPrime-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Courier Prime';
+    src: url("../fonts/CourierPrime-Bold.ttf");
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Courier Prime';
+    src: url("../fonts/CourierPrime-Italic.ttf");
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Courier Prime';
+    src: url("../fonts/CourierPrime-BoldItalic.ttf");
+    font-style: italic;
+    font-weight: bold;
 }
 
 /* Base layout */
@@ -59,6 +87,13 @@ h1, p {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.scrollFadeMask {
+    overflow: scroll;
+    mask-image: linear-gradient(to bottom,
+        transparent .5em,
+        red 1em calc(100% - 1em),
+        transparent calc(100% - .5em));
 }
 
 /* General classes */
@@ -170,12 +205,14 @@ main img.mainStroke1 {
 }
 main img.mainLogo {
     width: 280px;
+    
+    transform: rotate(4deg);
 }
 main img.fruitStickerJuicy {
     top: 90px;
     left: 40px;
 
-    width: 70px;
+    width: 73px;
     
     transform: rotate(-30deg);
 }
@@ -192,4 +229,52 @@ main img.fruitStickerSummerina {
     left: 390px;
 
     width: 70px;
+}
+main img.sectionTape {
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    width: 220px;
+    transform: rotate(-5deg);
+    z-index: 1;
+}
+/* Main section content */
+main .sectionContainer {
+    position: absolute;
+    left: 75px;
+    top: 370px;
+    padding: 15px 50px 15px 30px;
+    
+    width: 450px;
+    aspect-ratio: 0.71;
+
+    background-image: url("../img/paper_main.png");
+    background-position: 50% 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(-5deg);
+}
+main section {
+    width: 100%;
+    height: 100%;
+}
+main section h2 {
+    margin: 0.7em 0 0;
+
+    font-size: 2.3em;
+
+    font-family: 'Gochi Hand';
+    text-align: center;
+}
+main section p {
+    font-size: 0.9em;
+
+    font-family: 'Courier Prime';
+    color: var(--text);
+}
+main section a {
+    color: #3c7127;
+}
+main section a:hover {
+    color: #4ca22a;
 }
