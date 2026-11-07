@@ -238,6 +238,18 @@ main img.sectionTape {
     transform: rotate(-5deg);
     z-index: 1;
 }
+main img.postageLavendar {
+    top: 758px;
+    right: 60px;
+    width: 103px;
+    transform: rotate(-12deg);
+}
+main img.postageApple {
+    top: 680px;
+    right: 0px;
+    width: 97px;
+    transform: rotate(2deg);
+}
 /* Main section content */
 main .sectionContainer {
     position: absolute;
