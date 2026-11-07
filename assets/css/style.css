@@ -303,3 +303,13 @@ main section a:hover {
 main section img.imgPlain {
     width: 100%;
 }
+main section code {
+    color: #463316dd;
+    background-color: #ad895235;
+}
+main section a code {
+    color: #637127dc;
+}
+main section a code:hover {
+    color: #93a83adc;
+}
