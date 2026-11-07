@@ -173,11 +173,11 @@ main {
     transform: rotate(4deg);
 }
 main > h1 {
-    margin: -20px 0;
+    margin: -10px 0 -20px;
 
     text-align: center;
     font-family: 'Caveat Brush';
-    font-size: 65px;
+    font-size: 60px;
     color: #a3544d;
 }
 main img.coffeeStain1 {
@@ -204,13 +204,15 @@ main img.mainStroke1 {
     transform: rotate(-4deg);
 }
 main img.mainLogo {
-    width: 280px;
+    margin-top: 10px;
+
+    width: 240px;
     
     transform: rotate(4deg);
 }
 main img.fruitStickerJuicy {
     top: 90px;
-    left: 40px;
+    left: 50px;
 
     width: 73px;
     
@@ -232,7 +234,7 @@ main img.fruitStickerSummerina {
 }
 main img.sectionTape {
     position: absolute;
-    top: 350px;
+    top: 330px;
     left: 150px;
     width: 220px;
     transform: rotate(-5deg);
@@ -254,7 +256,7 @@ main img.postageApple {
 main .sectionContainer {
     position: absolute;
     left: 75px;
-    top: 370px;
+    top: 350px;
     padding: 15px 50px 15px 30px;
     
     width: 450px;
