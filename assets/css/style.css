@@ -144,11 +144,10 @@ header ul {
 header li {
     line-height: 1.4;
 }
-header li:hover::after,
-header li.active::after {
+header li:hover::after {
     content: "<";
 }
-header li.active:hover::after {
+header li.active::after {
     content: "<<"
 }
 header a {
@@ -247,7 +246,7 @@ main img.postageLavendar {
     transform: rotate(-12deg);
 }
 main img.postageApple {
-    top: 680px;
+    top: 700px;
     right: 0px;
     width: 97px;
     transform: rotate(2deg);
