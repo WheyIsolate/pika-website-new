@@ -146,10 +146,10 @@ header li {
 }
 header li:hover::after,
 header li.active::after {
-    content: " <";
+    content: "<";
 }
 header li.active:hover::after {
-    content: " <<"
+    content: "<<"
 }
 header a {
     color: var(--text);
@@ -278,8 +278,16 @@ main section h2 {
     font-family: 'Gochi Hand';
     text-align: center;
 }
-main section p {
-    font-size: 0.9em;
+main section h3 {
+    margin: 0.8em 0 0;
+
+    font-size: 1.5em;
+
+    font-family: 'Gochi Hand';
+}
+main section p,
+main section ul {
+    font-size: 0.95em;
 
     font-family: 'Courier Prime';
     color: var(--text);
@@ -289,4 +297,7 @@ main section a {
 }
 main section a:hover {
     color: #4ca22a;
+}
+main section img.imgPlain {
+    width: 100%;
 }

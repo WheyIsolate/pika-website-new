@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include head.html %}
+        <title>pika - {{ page.title }}</title>
+    </head>
+    <body class="dropShadow">
+        <header class="dropShadow">
+            <img src="/assets/img/tape_long_3.png">
+            <h1 class="headerTitle">pika</h1>
+            <p class="centertext">A continuing experiment in cooperative living</p>
+            <div class="spacer10"></div>
+            <p>Order #69 for Joe Pika</p>
+            <hr>
+            <p class="centertext"><b>NAVIGATION</b></p>
+            <hr>
+                {% include navigation.html %}
+            <hr>
+            <p>
+                Item Count:
+                <span style="float: right">9</span>
+            </p>
+            <hr>
+            <div class="spacer10"></div>
+            <p>Thank you for visiting!</p>
+            <p class="barcode centertext">*69 Chestnut St*</p>
+        </header>
+        <main>
+            <img src="/assets/img/coffee_stain_1.png" class="coffeeStain1 bgImg">
+            <img src="/assets/img/coffee_stain_2.png" class="coffeeStain2 bgImg">
+            <img src="/assets/img/brush_stroke_title.png" class="mainStroke1 bgImg">
+            <img src="/assets/img/pika_house_sticker.png" class="mainLogo centerblock dropShadow">
+            <img src="/assets/img/fruitsticker_juicy.png" class="fruitStickerJuicy bgImg dropShadow">
+            <img src="/assets/img/fruitsticker_bitter.png" class="fruitStickerBitter bgImg dropShadow">
+            <img src="/assets/img/fruitsticker_summerina.png" class="fruitStickerSummerina bgImg dropShadow">
+            <h1>{{ page.title | upcase }}</h1>
+            <img src="/assets/img/tape_long_2.png" class="sectionTape">
+            <div class="sectionContainer dropShadow">
+                <section class="scrollFadeMask">
+                    {{ content }}
+                </section>
+            </div>
+            <img src="/assets/img/postage_lavendar.png" class="postageLavendar bgImg dropShadow">
+            <img src="/assets/img/postage_apple.png" class="postageApple bgImg dropShadow">
+        </main>
+    </body>
+</html>
