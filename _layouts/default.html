@@ -3,6 +3,13 @@
     <head>
         {% include head.html %}
         <title>pika - {{ page.title }}</title>
+        <style>
+            {% if page.h1Size And page.h1Size != "" And page.h1Size != nil %}
+            h1 {
+                font-size: {{ page.h1Size }} !important;
+            }
+            {% endif %}
+        </style>
     </head>
     <body class="dropShadow">
         <header class="dropShadow">
