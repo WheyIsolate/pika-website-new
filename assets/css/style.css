@@ -361,6 +361,7 @@ main section a code:hover {
     }
     
     /* Nav menu (header) button */
+    /* Y'all I am abusing the hell out of transforms */
     .menuButton {
         display: inline-block;
 
