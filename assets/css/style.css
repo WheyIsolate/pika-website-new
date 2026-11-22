@@ -499,13 +499,14 @@ main section a code:hover {
     main .sectionContainer {
         left: 2%;
         top: 340px;
-        padding-left: 20px;
-        padding-right: 40px;
+        padding-left: 4%;
+        padding-right: 9%;
 
         width: 97%;
         aspect-ratio: auto;
 
         background-image: url("../img/paper_main_mobile.png");
+        background-size: 100% auto;
         background-repeat: repeat-y;
         transform: none;
     }
