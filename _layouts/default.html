@@ -7,6 +7,7 @@
             {% if page.h1Size And page.h1Size != "" And page.h1Size != nil %}
             main h1 {
                 font-size: {{ page.h1Size }} !important;
+                margin-top: calc({{ page.h1Size }} / 8 - 0.3em) !important;
             }
             {% endif %}
         </style>
