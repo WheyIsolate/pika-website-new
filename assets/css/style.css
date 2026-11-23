@@ -292,7 +292,8 @@ main section h3 {
     font-family: 'Gochi Hand';
 }
 main section p,
-main section ul {
+main section ul,
+main section ol {
     font-size: 0.95em;
 
     font-family: 'Courier Prime';
@@ -316,6 +317,12 @@ main section a code {
 }
 main section a code:hover {
     color: #93a83adc;
+}
+main section .small {
+    font-size: small;
+}
+main section .underline {
+    text-decoration: underline;
 }
 
 @media (max-width: 835px) {

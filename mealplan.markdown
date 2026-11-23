@@ -15,6 +15,7 @@ Signups for mealplan happen at the beginning of each quarter. If you're on our s
 
 **Short answer: anybody!** pika's mealplan is open to residents and non-residents alike. Non-resident membership is not at all unusual; the mealplan is often only half residents!
 
+------------------------------------------------------------------------
 
 ## Pricing and Kitchen Duties
 
@@ -36,6 +37,7 @@ pika offers two mealplan options:
 
 Mealplan members can either  [cook](https://docs.google.com/document/d/1km9wsN4MylTJMC9dFMj-yqtmgdyZPPOaXeBK8U20F70/edit?usp=sharing) or [clean](https://docs.google.com/document/d/1dm-aM2FnhW7KYKED0RO84Bpln5C1EGoGe2mqeGyPWz0/edit?usp=sharing). Kitchen duties are done in pairs or triples and usually accompanied by music through our kitchen stereo system, but we pretend it's work anyway.
 
+------------------------------------------------------------------------
   	  
 ## Other Details
 
