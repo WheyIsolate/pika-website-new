@@ -371,6 +371,7 @@ main section .underline {
     /* Y'all I am abusing the hell out of transforms */
     .menuButton {
         display: inline-block;
+        white-space: nowrap;
 
         cursor: pointer;
     }
@@ -382,6 +383,12 @@ main section .underline {
         font-family: 'Georgiaz';
 
         transform: translateY(0.1em);
+    }
+    .menuButton span.menuCollapse {
+        display: none;
+
+        font-size: large;
+        font-family: 'Gochi Hand';
     }
     .menuButton img {
         width: 2em;
@@ -406,16 +413,15 @@ main section .underline {
     .menuButton:has(input:checked) span.menuLogo {
         display: none;
     }
+    .menuButton:has(input:checked) span.menuCollapse {
+        display: inline-block;
+    }
     @keyframes menuButtonTransition {
         0% {
-            opacity: 1;
-            transform: translate(0px, 0px);
-        }
-        45% {
             opacity: 0;
             transform: translate(0px, 0px);
         }
-        55% {
+        50% {
             opacity: 0;
             transform: translate(5px, -561px);
         }
