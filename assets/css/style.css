@@ -324,6 +324,10 @@ main section .small {
 main section .underline {
     text-decoration: underline;
 }
+main section hr {
+    border-top: 1.5px solid var(--text);
+    border-bottom: none;
+}
 
 @media (max-width: 835px) {
     /* Base layout */
